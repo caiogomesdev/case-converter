@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #efefef;
+    font-family: sans-serif;
+    color: #212529;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: initial;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.01);
+    border-bottom: solid 1px rgba(0, 0,0,0.1);
+    padding: 0px 100px;
+}
+header h1{
+    cursor: pointer;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #212529;
+}
+
+header h1 a:hover{
+    color: #565b66;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+.container h1{
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: 100;
+}
+.container p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.c_focus{
+    margin-top: 20px;
+    border: solid 1px rgba(0,0,0,.2);
+    border-radius: 5px;
+    width: 80%;
+    padding: 20px;
+}
+
+.c_btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.btn{
+    border: 0px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+.btn-primary{
+    background-color: #0069D9;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background-color: #0061c9;
+}
+
+#appText{
+    width: 100%;
+    height: 500px;
+    font-size: 24px;
+    resize: vertical;
+    padding: 10px;
+    background-color: #efefef;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#appText:focus{
+    outline: 1px solid #0074f0;
+}
+
+
+footer{
+    background-color: #212529;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header{
+        padding: 0;
+        justify-content: center;
+    }
+    .c_focus{
+        width: 100%;
+    }
+    #appText{
+        height: 300px;
+    }
+}

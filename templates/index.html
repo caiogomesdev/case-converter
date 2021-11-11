@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter - @caiogomesdev</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    {% include 'components/header.html'%}
+    <main>
+        <section class="container">
+            <h1>
+            Case Converter
+            </h1>
+            <p>convert texts for different types of cases easily</p>
+
+            {% include 'components/caseconverter.html'%}
+
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+<script src="{{url_for('static', filename='js/aplication.js')}}"></script>
+</html>
